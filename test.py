@@ -10,7 +10,7 @@ PINECONE_KEY = os.getenv('PINECONE_KEY')
 # Initialize OpenAI and Pinecone clients
 pc = Pinecone(api_key=PINECONE_KEY)
 client = OpenAI(api_key=OPENAI_KEY)
-# Reference your Pinecone index
+# Reference  Pinecone index
 index_name = "mauibuildingcode"
 index = pc.Index(name=index_name)
 
@@ -32,9 +32,9 @@ def generate_response(similar_texts_ids, user_message):
     Generate a response using OpenAI based on the IDs of similar texts.
     """
     # For simplicity, let's just pass the user message to OpenAI's GPT model
-    # In a real application, you might fetch the texts by IDs and use them to augment the query
+    # Fetch the texts by IDs and use them to give context to the query
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # Adjust the engine as needed
+        model="gpt-3.5-turbo",  
         messages=[
             {"role": "system", "content": "you are an assistant helping maui tradespeople with building code questions."},
             {"role": "system", "content": f"base your responses on the follwoing information: {similar_texts_ids}"},
@@ -44,6 +44,8 @@ def generate_response(similar_texts_ids, user_message):
         max_tokens=150
     )
     return response.choices[0].message
+    # return response['choices'][0]['message']['content']
+
 
 if __name__ == "__main__":
     user_message = "Do I have to caulk a toilet to the bathroom floor"

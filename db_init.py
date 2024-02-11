@@ -16,7 +16,7 @@ client = OpenAI(api_key=OPENAI_KEY)
 pc = Pinecone(api_key=PINECONE_KEY)
 
 index_name = "mauibuildingcode"
-dimension = 1536  # Adjust based on the model's output
+dimension = 1536  # Adjusted based on the openai model's output
 
 # Check if the index exists and create it if it doesn't
 if index_name not in pc.list_indexes().names():
@@ -25,8 +25,8 @@ if index_name not in pc.list_indexes().names():
         dimension=dimension,
         metric="cosine",
         spec=ServerlessSpec(
-            cloud='aws',  # Or your cloud provider
-            region='us-west-2'  # Or your preferred region
+            cloud='aws',  # this is built on aws
+            region='us-west-2'  #closest to me
         )
     )
 
