@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template_string
+from flask import Flask, request, render_template_string, jsonify
 import os
 import openai
 from pinecone import Pinecone
@@ -17,7 +17,18 @@ index_name = "mauibuildingcode"
 index = pc.Index(name=index_name)
 
 app = Flask(__name__)
+MANUAL = """You are an exper maui county building code assistant helping Maui tradespeople with building code questions. always use references to actual building code provided to answer questions, speak in light pigeon.
 
+The user may indicate their desired VERBOSITY of your response as follows: V=1: extremely terse V=2: concise V=3: detailed (default) V=4: comprehensive V=5: exhaustive and nuanced detail with comprehensive depth and breadth. If not indicated, assume V=1: terse.
+
+Once the user has sent a message, adopt the role of a building code expert, qualified to provide a authoritative, nuanced answer, then proceed step-by-step to respond:
+
+1. Provide your authoritative, and nuanced answer as a local maui expert; prefix with relevant emoji and embed GOOGLE SEARCH HYPERLINKS around key terms as they naturally occur in the text, q=extended search query. Omit disclaimers, apologies, and AI self-references.  Provide unbiased, holistic guidance and analysis. Go step by step for complex answers. Do not elide code. IMPORTANT: USE ONLY GOOGLE SEARCH HYPERLINKS, no other domains are allowed. Example: 🚙 Car shopping can be stressful. 
+
+2. Format your response using markdown for excellent readability on the fly. Users will likely be on a jobsite while reading.
+
+3. Ask if any further clarification is necessary.
+"""
 HTML_TEMPLATE = """
 <!doctype html>
 <html>
@@ -37,7 +48,7 @@ HTML_TEMPLATE = """
 </html>
 """
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/chat', methods=['GET', 'POST'])
 def chat():
     response = ""
     if request.method == 'POST':
@@ -46,6 +57,18 @@ def chat():
         response = generate_response(similar_texts_ids, user_message)
     return render_template_string(HTML_TEMPLATE, response=response)
 
+@app.route('/api', methods=['POST', 'GET'])
+def chat_api():
+    if request.method == 'POST':
+        data = request.get_json()  # Get data sent as JSON
+        user_message = data['query']  # Extract the query from the data
+        
+        # Use the existing logic to process the query
+        similar_texts_ids = find_similar_texts(user_message)
+        response_text = generate_response(similar_texts_ids, user_message)
+        
+        # Return the response in JSON format
+        return jsonify({"answer": response_text})    
 def get_embedding(text, model="text-embedding-3-small"):
     text = text.replace("\n", " ")
     return client.embeddings.create(input=[text], model=model).data[0].embedding
@@ -60,12 +83,7 @@ def generate_response(similar_texts_ids, user_message):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": """You are an assistant helping Maui tradespeople with building code questions. always use references to actual building code provided to answer questions.
-The user may indicate their desired VERBOSITY of your response as follows: V=1: extremely terse V=2: concise V=3: detailed (default) V=4: comprehensive V=5: exhaustive and nuanced detail with comprehensive depth and breadth. If not indicated, assume V=1: terse.
-
-Once the user has sent a message, adopt the role of a building code expert, qualified to provide a authoritative, nuanced answer, then proceed step-by-step to respond:
-
-Provide your authoritative, and nuanced answer as a local maui expert speaking pigeon; prefix with relevant emoji and embed GOOGLE SEARCH HYPERLINKS around key terms as they naturally occur in the text, q=extended search query. Omit disclaimers, apologies, and AI self-references. Provide unbiased, holistic guidance and analysis incorporating EXPERTs best practices. Go step by step for complex answers. Do not elide code. IMPORTANT: USE ONLY GOOGLE SEARCH HYPERLINKS, no other domains are allowed. Example: 🚙 Car shopping can be stressful. """
+            {"role": "system", "content": MANUAL
 },
             {"role": "system", "content": f"Base your responses on the following information: {similar_texts_ids}"},
             {"role": "user", "content": user_message},
