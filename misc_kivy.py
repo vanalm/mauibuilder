@@ -1,0 +1,75 @@
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
+from kivy.uix.button import Button
+from kivy.network.urlrequest import UrlRequest
+import json
+from kivy.metrics import dp, sp
+from kivy.graphics import Color, Rectangle  # Import for drawing the background
+
+class QueryInterface(BoxLayout):
+    def __init__(self, **kwargs):
+        super(QueryInterface, self).__init__(**kwargs)
+        self.orientation = 'vertical'
+        self.padding = dp(10)
+        self.spacing = dp(10)
+
+        # Define initial height for a single line of text
+        self.line_height = sp(20)  # Adjust this based on your font size and preference
+        initial_height = self.line_height + dp(20)  # Adding a bit extra padding
+
+        # Response label with customized background and text color
+        self.response_label = Label(text='Your response will appear here', size_hint_y=None, height=dp(100), color=(0, 0, 0, 1))  # Text color: black
+        self.add_widget(self.response_label)
+
+        # Setting the background of the response label to white
+        with self.response_label.canvas.before:
+            Color(1, 1, 1, 1)  # Set color to white
+            self.rect = Rectangle(pos=self.response_label.pos, size=self.response_label.size)
+
+        # Update the rectangle size to match label size changes
+        self.response_label.bind(size=lambda *args: setattr(self.rect, 'size', self.response_label.size))
+        self.response_label.bind(pos=lambda *args: setattr(self.rect, 'pos', self.response_label.pos))
+
+        # Query input box
+        self.query_input = TextInput(
+            hint_text='What are we working on?',
+            size_hint_y=None,
+            height=initial_height,
+            multiline=True,
+            background_color=(1, 1, 1, 1)  # Set the background color to white
+        )
+        self.query_input.bind(text=self.adjust_height)
+        self.add_widget(self.query_input)
+
+        # Submit button
+        self.submit_button = Button(text='Submit', size_hint_y=None, height=dp(50))
+        self.submit_button.bind(on_press=self.submit_query)  # Bind the button to submit_query method
+        self.add_widget(self.submit_button)
+
+    def adjust_height(self, instance, value):
+        # Adjust the height of the TextInput based on its content
+        lines = len(instance._lines)  # Using the internal _lines list which accounts for wrapped text
+        new_height = max(self.line_height * lines, self.line_height) + dp(20)  # Extra padding
+        instance.height = min(new_height, self.line_height * 5 + dp(20))  # Cap at 5 lines worth of height
+        instance.text_size = (instance.width - dp(10), None)  # Ensure text wrapping occurs properly
+
+    def submit_query(self, instance):
+        # Handles the query submission
+        query = self.query_input.text.strip()
+        if query:
+            self.response_label.text = 'checking the local building code...'
+            # Asynchronous request to the Flask backend
+            req = UrlRequest('http://127.0.0.1:5000/api', on_success=self.display_response, req_body=json.dumps({'query': query}), req_headers={'Content-type': 'application/json', 'Accept': 'text/plain'})
+
+    def display_response(self, req, result):
+        # Display the response from the Flask backend
+        self.response_label.text = f"Response: {result['answer']}"
+
+class QueryApp(App):
+    def build(self):
+        return QueryInterface()
+
+if __name__ == '__main__':
+    QueryApp().run()
