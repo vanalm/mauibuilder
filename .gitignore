@@ -6,5 +6,4 @@ tempCodeRunerFile.py
 .gradio/certificate.pem 
 .DS_Store
 tempCodeRunnerFile.py
-
-
+.env

@@ -3,10 +3,13 @@ import os
 import openai
 from pinecone import Pinecone
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Load API keys from environment variables
-OPENAI_KEY = os.getenv('OPENAI_KEY')
-PINECONE_KEY = os.getenv('PINECONE_KEY')
+OPENAI_KEY = os.getenv('OPENAI_API_KEY')
+PINECONE_KEY = os.getenv('PINECONE_API_KEY')
 
 # Initialize OpenAI and Pinecone clients
 pc = Pinecone(api_key=PINECONE_KEY)
