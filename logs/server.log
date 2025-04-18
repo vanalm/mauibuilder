@@ -1,0 +1,88 @@
+2025-04-18 11:55:27,265 - __main__ - INFO - Starting server on 0.0.0.0:8000 with environment=None
+2025-04-18 12:02:41,256 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:12:54,975 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:13:02,202 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 12:13:03,225 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:13:03,226 - server.app - ERROR - Error calling the LLM: AsyncResponses.create() got an unexpected keyword argument 'max_tokens'
+2025-04-18 12:13:04,227 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:13:04,227 - server.app - ERROR - Error calling the LLM: AsyncResponses.create() got an unexpected keyword argument 'max_tokens'
+2025-04-18 12:13:05,229 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:13:05,229 - server.app - ERROR - Error calling the LLM: AsyncResponses.create() got an unexpected keyword argument 'max_tokens'
+2025-04-18 12:14:16,464 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:14:21,845 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 12:14:22,335 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:14:23,925 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 12:14:23,944 - server.app - ERROR - Error calling the LLM: 'Response' object is not subscriptable
+2025-04-18 12:14:24,945 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:14:25,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 12:14:25,940 - server.app - ERROR - Error calling the LLM: 'Response' object is not subscriptable
+2025-04-18 12:14:26,940 - server.app - INFO - Using oai.responses.create() for text generation.
+2025-04-18 12:14:27,831 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 12:14:27,834 - server.app - ERROR - Error calling the LLM: 'Response' object is not subscriptable
+2025-04-18 12:23:45,670 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:23:52,017 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 12:25:10,875 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:25:17,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 12:25:17,929 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 12:33:13,865 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 12:33:45,740 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 12:33:46,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:03:49,956 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:04:15,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:04:16,672 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:09:00,719 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:09:10,148 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:09:10,870 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:10:24,089 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:10:31,068 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:10:31,731 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:11:13,341 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:11:13,594 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:11:25,286 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:11:25,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:11:31,685 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:11:31,920 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-04-18 13:19:31,761 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:19:46,879 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:20:30,471 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:20:41,784 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:21:17,573 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:21:25,393 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:22:00,021 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 13:22:09,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:22:11,262 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 13:22:11,279 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Aloha! I’m ready to help with any Maui County building code questions you get. Just ask, and I’ll give you solid code answers with local references. Need anything tested or explained?
+2025-04-18 13:22:31,649 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:22:33,278 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 13:22:33,282 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Your last message was:
+
+**"test"**
+
+Let me know if you need help with anything building code related!
+2025-04-18 13:28:30,535 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:28:32,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 13:28:32,621 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Aloha! I see you testing the chat. If you get any Maui building code questions, just ask. I stay ready fo help wit code references from 2018 IBC, Energy Code, or anything local.
+
+You like me check someting specific?
+2025-04-18 13:32:32,021 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:32:34,890 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 13:32:34,893 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Aloha! I see you testing—everything stay good from my side.
+
+If you get any questions about Maui building codes, just throw ‘em at me. I ready fo help wit code refs and all.
+
+You like me fo explain anything now?
+2025-04-18 13:32:50,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 13:32:52,600 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 13:32:52,603 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Yea, I remember your last message — you just said “testing 1, 2.” No worries, I stay ready fo help with any Maui building code questions you get.
+
+You like go ahead wit any code question or clarification?
