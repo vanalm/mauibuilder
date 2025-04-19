@@ -15,5 +15,6 @@
   "temperature": 0.7,
 
   "use_responses_api": true,
-  "MAX_ATTEMPTS": 3
+  "MAX_ATTEMPTS": 3,
+  "MIN_SCORE_THRESHOLD": 0.3
 }

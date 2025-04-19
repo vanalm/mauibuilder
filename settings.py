@@ -24,3 +24,4 @@ class Settings(BaseModel):
     PINECONE_API_KEY: str = ""
     OPENAI_API_KEY: str = ""
     DATABASE_URL: str = ""
+    MIN_SCORE_THRESHOLD: float = 0.5

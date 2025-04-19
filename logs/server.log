@@ -86,3 +86,960 @@ Raw output:
 Yea, I remember your last message — you just said “testing 1, 2.” No worries, I stay ready fo help with any Maui building code questions you get.
 
 You like go ahead wit any code question or clarification?
+2025-04-18 14:05:24,443 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:05:31,363 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:05:31,366 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+### Maximum Building Height in Maui
+
+In Maui County, the maximum building height depends on zoning and specific land use regulations, but the baseline is governed by the **2018 International Building Code (IBC)** as adopted locally.
+
+#### Basic Height Limits (per 2018 IBC & Maui County Zoning)
+- **IBC Section 504**: Building height limits depend on construction type and occupancy.
+- **Maui County Zoning Code**: Typically, **30 feet** in many residential zones (R-1, R-2).
+- In commercial and industrial zones, heights can go higher, often up to **45 feet** or more, subject to zoning district.
+- Special districts (e.g., historic, coastal) may have stricter height limits.
+
+#### Additional Maui-Specific Notes:
+- **Ord 5508 (2018 IBC Adoption)**: Confirms adoption of 2018 IBC, which means Maui follows standard height limits but defers to local zoning.
+- **Height exceptions**: Roof structures for mechanical equipment may exceed height by up to 15 feet per IBC 504.3.
+- **Hawaii State Land Use**: May impose additional height restrictions in certain zones (e.g., agricultural or conservation).
+
+### Summary
+| Zone Type     | Typical Max Height | Code Reference                       |
+|---------------|-------------------|------------------------------------|
+| Residential   | 30 ft             | Maui County Zoning; IBC 504        |
+| Commercial    | 45 ft+            | Maui County Zoning; IBC 504        |
+| Roof Structures| +15 ft allowed   | IBC 504.3                          |
+
+If you building in a specific zone, check Maui County zoning rules for exact height limits.
+
+---
+
+Need help checking height limits for a specific zone or project?
+2025-04-18 14:10:48,416 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:10:57,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:10:57,930 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+### Fence Permit Requirements in Maui County
+
+You like build fence, yeah? Lemme break down for you local style, straight from the code:
+
+---
+
+**1. When No Permit Needed:**
+
+- According to Maui County Code (based on 2018 IBC Ord. 5508), fences **6 feet or less in height** in residential zones usually **do NOT require a building permit**.
+- If your fence is **non-structural** and doesn’t affect public right-of-way or utilities, you likely stay permit-exempt.
+  
+**2. When Permit IS Required:**
+
+- Fence over **6 feet tall** (like retaining walls or privacy fences) need a permit (IBC 105.2).
+- If fence is in a commercial or special zoning district, check specific zoning rules.
+- If fence is part of retaining wall or located near property line affecting safety, permit needed.
+- Electric or special materials (like barbed wire) often need permits and special approval.
+
+**3. Other Conditions:**
+
+- Must comply with zoning setbacks (Maui County Zoning Code).
+- Fences cannot block visibility for traffic safety (Maui County Ordinance).
+- Fences near right-of-way or easements require approval.
+
+---
+
+### Summary:
+
+- **Residential fence ≤ 6 ft → Usually no permit**
+- **Fence > 6 ft or special conditions → Permit required**
+- Always check zoning setbacks and location.
+
+---
+
+If you like, I can help you find exact Maui zoning rules or walk you through permit application. Need mo’ info?
+2025-04-18 14:12:54,781 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:13:00,816 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:13:00,818 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+### Can You Build a Deck Without a Permit in Maui?
+
+No, usually you **cannot build a deck without a permit** in Maui. Here’s the rundown:
+
+---
+
+### Maui County Building Code Reference
+
+- **2018 International Building Code (IBC) & 2018 Maui County Residential Code, Chapter 3 & 5**  
+  - Any deck attached to a dwelling and over **30 inches (762 mm) above grade** requires a building permit.  
+  - Freestanding decks over **30 inches above grade** also require permits.  
+  - Decks less than 30 inches high and not supporting habitable space or egress may be exempt.
+
+- **2018 Maui County Residential Code (Ord 5508)**  
+  - Section R105.2: Work requiring a permit includes decks attached to structures.  
+  - Section R507: Deck construction standards, including structural framing and ledger attachment, require plan review and inspection.
+
+---
+
+### Why Get a Permit?
+
+- Ensures compliance with **structural safety** (wind loads, lateral support).  
+- Confirms proper **ledger attachment** to prevent deck failure.  
+- Verifies **guardrails** and stair safety per code.  
+- Helps with **insurance and resale** of property.
+
+---
+
+### Summary Table
+
+| Deck Type                     | Permit Required? |
+|-------------------------------|------------------|
+| Attached deck > 30" above grade| Yes              |
+| Freestanding deck > 30" high   | Yes              |
+| Deck < 30" above grade         | Usually no       |
+
+---
+
+If you planning one, check height and attachment. If over 30 inches or attached, get permit from Maui County Building Division.
+
+---
+
+Need help with the permit process or deck specs? Just ask!
+2025-04-18 14:13:42,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:13:45,469 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:13:45,473 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Sure! You can verify deck permit requirements directly from Maui County’s official resources:
+
+- **Maui County Building Division**:  
+  [https://www.mauicounty.gov/184/Building-Division](https://www.mauicounty.gov/184/Building-Division)
+
+- **2018 Maui County Residential Code (Ord 5508)** (PDF):  
+  [https://www.mauicounty.gov/DocumentCenter/View/112769/Ord-5508-2018-Maui-County-Residential-Code](https://www.mauicounty.gov/DocumentCenter/View/112769/Ord-5508-2018-Maui-County-Residential-Code)
+
+Check Chapter 1 (Permits) and Chapter 5 (Deck Requirements).
+
+If you like, I can help you navigate the code sections. Need dat?
+2025-04-18 14:16:23,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:16:29,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:16:29,829 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+Here’s the rundown for swimming pool requirements in Maui, based on the **2018 Maui County Residential Code** and related codes:
+
+---
+
+# Maui Swimming Pool Requirements
+
+### 1. **Permits & Inspections**
+- You need a **building permit** before constructing or installing a pool (2018 Maui Residential Code, R105.1).
+- Inspections required: footing, electrical, final plumbing, and final pool inspection.
+
+### 2. **Fencing & Barriers (Safety)**
+- Pools must have a barrier to prevent unsupervised access by children under 5 years (2018 Maui Residential Code, R326.1).
+- Barrier height minimum: **at least 48 inches** above ground (R326.2.1).
+- Gates must be **self-closing and self-latching**, latch placed at least 54 inches above ground (R326.2.3).
+- No openings in barrier should allow passage of a 4-inch diameter sphere (R326.2.4).
+- Walls of the home can be part of the barrier if the doors are alarmed or have self-closing/latching devices.
+
+### 3. **Electrical Safety**
+- All electrical equipment must comply with **2017 NEC** as adopted by Maui.
+- Pool lighting and equipment must be grounded and GFCI protected (Maui Electrical Code).
+- Bonding requirements for pool metal parts (rebar, pumps, etc.) to prevent shock hazards.
+
+### 4. **Drainage & Circulation**
+- Pools must have proper circulation and filtration systems.
+- Main drains must be compliant with the **Virginia Graeme Baker Pool & Spa Safety Act** to prevent entrapment.
+- Backflow prevention devices required on water supply lines (2018 Maui Residential Code P2902).
+
+### 5. **Location & Setbacks**
+- Pool setbacks from property lines depend on zoning, usually minimum **5 feet setback** (2018 Maui County Zoning Code).
+- Pools cannot be placed over septic tanks or drain field areas.
+
+### 6. **Energy Efficiency**
+- Pool heaters and pumps must comply with **2018 IECC** energy provisions (Ord. 5455).
+- Covers recommended for outdoor heated pools to reduce energy loss.
+
+---
+
+If you like, I can hook you up with the specific code sections or help with fence/gate details. Need more help?
+2025-04-18 14:18:46,841 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:18:52,985 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:18:52,987 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+### Variance Process in Maui County (Building Code)
+
+When you need a **variance**—means you ask for an exception to the building code requirements—hereʻs how you handle it in Maui:
+
+---
+
+### 1. **Submit Application**
+- You start by submitting a **written application** for a variance to the *Maui County Department of Public Works & Environmental Management* (or the relevant building official).
+- The application must state:
+  - The **specific code section** you want a variance from.
+  - **Reason(s)** why strict compliance causes **unnecessary hardship** or practical difficulties.
+  - How the variance will still **meet the intent of the code** and **public safety**.
+
+---
+
+### 2. **Review by Building Official**
+- The **Building Official** reviews your application.
+- They check if:
+  - The hardship is **unique to your property** and not self-created.
+  - The variance won’t **compromise health, safety, or welfare**.
+  - The variance aligns with the **intent of the Maui County Building Code**.
+
+---
+
+### 3. **Public Hearing / Board of Variance**
+- In many cases, the matter goes to the **Board of Variance and Appeals (BVA)**.
+- The BVA holds a **public hearing** so neighbors and stakeholders can comment.
+- They evaluate your case on the merit of:
+  - Hardship.
+  - Code intent.
+  - Public interest.
+
+---
+
+### 4. **Decision**
+- The BVA or Building Official issues a **written decision**.
+- If approved, the **variance is granted** with any necessary conditions.
+- If denied, you must comply with the code or consider an **appeal**.
+
+---
+
+### Code Reference:
+- See **Maui County Code §16.04.160** (Building Code Variances) for detailed procedure.
+- Also check **2018 IBC, Section 112—Board of Appeals** for authority and process.
+- 2018 IECC & State Residential Code do not typically handle variances directly but defer to local code.
+
+---
+
+### Quick Summary:
+- Apply → Building Official Review → BVA Hearing → Decision.
+- Must show **unnecessary hardship** and protect **public safety**.
+- Variance is **exception**, not routine.
+
+---
+
+If you like, I can help you with the application form or specifics on what counts as hardship. Need that?
+2025-04-18 14:30:23,826 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:30:29,840 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:30:37,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:30:37,019 - server.app - ERROR - OAI request failed with JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Raw output:
+### Maximum Building Height in Maui
+
+In Maui County, building height limits depend on zoning and land use designations, with specific height limits set by the **Maui County Code (MCC), Title 19 - Zoning**.
+
+#### General Guidelines:
+- **Residential Zones (e.g., R-1, R-2)**: Usually limited to **30 feet** or **2 stories**.
+- **Commercial Zones (e.g., B-1, B-2)**: Typically allow heights up to **40-45 feet**, depending on the specific zone.
+- **Special Districts**: Heights can be more restrictive, especially in historic or coastal areas.
+
+#### Specific Maui County Code Reference:
+- **MCC Title 19, Chapter 19.04 - Definitions and General Provisions** defines height and measurement standards.
+- **MCC Title 19, Chapter 19.08 - Residential Districts** and **Chapter 19.12 - Business Districts** set zoning-specific height limits.
+- For example, **19.08.050** states residential height limits as **30 feet** maximum.
+  
+#### Additional Notes:
+- Height exceptions exist for architectural features like antennas, chimneys, and mechanical equipment.
+- The **2018 IBC Section 503** regulates building height and area for fire safety but defers to local zoning for maximum height.
+- Coastal or scenic overlay districts may impose stricter height limits for view preservation.
+
+### Summary
+- **Most residential buildings: max 30 feet.**
+- **Commercial buildings: typically 40-45 feet max.**
+- **Verify zoning district for exact limit.**
+
+If you tell me your project location or zoning, I can give more specific height limits.
+
+Need help checking your zoning or more details on height exceptions?
+2025-04-18 14:36:00,125 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:36:35,125 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:42:06,262 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:42:12,253 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:42:12,269 - server.app - WARNING - formatted output failed... 
+2025-04-18 14:42:13,326 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:42:17,115 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:42:17,117 - server.app - WARNING - formatted output failed... 
+2025-04-18 14:42:18,446 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:42:22,789 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:42:22,792 - server.app - WARNING - formatted output failed... 
+2025-04-18 14:45:08,440 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:45:24,818 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:45:34,442 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:45:34,460 - server.app - INFO - {"event": "aoi_request", "latency": 9.137, "model": "gpt-4.1-mini"}
+2025-04-18 14:45:35,466 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:45:41,405 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:45:41,409 - server.app - INFO - {"event": "aoi_request", "latency": 5.778, "model": "gpt-4.1-mini"}
+2025-04-18 14:47:45,300 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:49:06,107 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:49:41,374 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:49:46,860 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:49:46,873 - server.app - INFO - {"event": "aoi_request", "latency": 4.964, "model": "gpt-4.1-mini"}
+2025-04-18 14:49:47,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:49:53,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:49:53,621 - server.app - INFO - {"event": "aoi_request", "latency": 5.686, "model": "gpt-4.1-mini"}
+2025-04-18 14:49:54,725 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:49:58,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:49:58,054 - server.app - INFO - {"event": "aoi_request", "latency": 3.178, "model": "gpt-4.1-mini"}
+2025-04-18 14:57:56,604 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:59:04,339 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 14:59:32,503 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 14:59:39,876 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 14:59:39,893 - server.app - INFO - {"event": "aoi_request", "latency": 6.851, "model": "gpt-4.1-mini"}
+2025-04-18 14:59:39,894 - server.app - INFO - Input tokens: 135, Output tokens: 359
+2025-04-18 15:07:37,151 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 15:08:09,762 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:08:13,625 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:08:13,643 - server.app - INFO - {"event": "aoi_request", "latency": 3.277, "model": "gpt-4.1-mini"}
+2025-04-18 15:08:13,643 - server.app - INFO - Input tokens: 136, Output tokens: 257
+2025-04-18 15:08:19,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:08:23,936 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:08:23,939 - server.app - INFO - {"event": "aoi_request", "latency": 4.242, "model": "gpt-4.1-mini"}
+2025-04-18 15:08:23,939 - server.app - INFO - Input tokens: 411, Output tokens: 218
+2025-04-18 15:08:54,865 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:08:58,446 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:08:58,449 - server.app - INFO - {"event": "aoi_request", "latency": 3.49, "model": "gpt-4.1-mini"}
+2025-04-18 15:08:58,449 - server.app - INFO - Input tokens: 647, Output tokens: 233
+2025-04-18 15:14:56,650 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:15:01,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:15:01,667 - server.app - INFO - {"event": "aoi_request", "latency": 4.459, "model": "gpt-4.1-mini"}
+2025-04-18 15:15:01,667 - server.app - INFO - Input tokens: 131, Output tokens: 378
+2025-04-18 15:15:02,673 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:15:06,293 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:15:06,295 - server.app - INFO - {"event": "aoi_request", "latency": 3.526, "model": "gpt-4.1-mini"}
+2025-04-18 15:15:06,295 - server.app - INFO - Input tokens: 512, Output tokens: 292
+2025-04-18 15:27:38,987 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:27:45,603 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:27:45,606 - server.app - INFO - {"event": "aoi_request", "latency": 6.041, "model": "gpt-4.1-mini"}
+2025-04-18 15:27:45,606 - server.app - INFO - Input tokens: 133, Output tokens: 254
+2025-04-18 15:29:24,703 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:29:29,823 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:29:29,826 - server.app - INFO - {"event": "aoi_request", "latency": 4.678, "model": "gpt-4.1-mini"}
+2025-04-18 15:29:29,826 - server.app - INFO - Input tokens: 403, Output tokens: 372
+2025-04-18 15:38:21,404 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:38:26,052 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:38:26,054 - server.app - INFO - {"event": "aoi_request", "latency": 4.099, "model": "gpt-4.1-mini"}
+2025-04-18 15:38:26,054 - server.app - INFO - Input tokens: 133, Output tokens: 355
+2025-04-18 15:42:47,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:42:53,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:42:53,488 - server.app - INFO - {"event": "aoi_request", "latency": 5.105, "model": "gpt-4.1-mini"}
+2025-04-18 15:42:53,489 - server.app - INFO - Input tokens: 133, Output tokens: 383
+2025-04-18 15:43:01,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:43:05,979 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:43:05,981 - server.app - INFO - {"event": "aoi_request", "latency": 3.865, "model": "gpt-4.1-mini"}
+2025-04-18 15:43:05,982 - server.app - INFO - Input tokens: 534, Output tokens: 280
+2025-04-18 15:43:18,576 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:43:21,952 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:43:21,955 - server.app - INFO - {"event": "aoi_request", "latency": 3.285, "model": "gpt-4.1-mini"}
+2025-04-18 15:43:21,955 - server.app - INFO - Input tokens: 832, Output tokens: 199
+2025-04-18 15:46:02,330 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 15:46:09,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:54:20,802 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 15:54:30,115 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:55:55,862 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 15:56:03,912 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:56:08,930 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:56:08,945 - server.app - INFO - {"event": "aoi_request", "latency": 4.556, "model": "gpt-4.1-mini"}
+2025-04-18 15:56:08,946 - server.app - INFO - [generate_response] Usage - input tokens: 133, output tokens: 310
+2025-04-18 15:56:48,721 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 15:57:10,344 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 15:57:10,345 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 15:57:10,345 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 15:57:10,345 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 15:57:10,345 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.8
+2025-04-18 15:57:10,345 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 15:57:11,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:57:11,247 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 15:57:11,618 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf",
+      "score": 0.0110187838,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Ord. 5455.pdf",
+      "score": -0.00034039098,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Commercial.COM Sample Energy Code Certification Block.pdf",
+      "score": -0.0117954696,
+      "values": []
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 15:57:11,619 - server.app - DEBUG - [find_similar_texts] Excluding match with score=0.01 (below threshold)
+2025-04-18 15:57:11,620 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.00 (below threshold)
+2025-04-18 15:57:11,621 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.01 (below threshold)
+2025-04-18 15:57:11,621 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 0
+2025-04-18 15:57:11,621 - server.app - DEBUG - [handle_conversation] references: []
+2025-04-18 15:57:11,622 - server.app - DEBUG - [build_reference_block] Building reference block for 0 references
+2025-04-18 15:57:11,622 - server.app - DEBUG - [build_reference_block] No references found above threshold.
+2025-04-18 15:57:11,622 - server.app - DEBUG - [handle_conversation] references_block: No high-confidence references found.
+2025-04-18 15:57:11,622 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 15:57:11,622 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 15:57:11,623 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 15:57:11,623 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+No high-confidence references found....
+2025-04-18 15:57:11,623 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 15:57:11,623 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 15:57:11,623 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 15:57:11,623 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 15:57:11,624 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\nNo high-confidence references found.'}
+2025-04-18 15:57:11,624 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 15:57:11,640 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 15:57:15,796 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:57:15,807 - server.app - INFO - {"event": "aoi_request", "latency": 4.167, "model": "gpt-4.1-mini"}
+2025-04-18 15:57:15,807 - server.app - INFO - [generate_response] Usage - input tokens: 133, output tokens: 330
+2025-04-18 15:57:15,807 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui
+
+In Maui County, the maximum building height depends on the zoning district. The primary regulations come from the **Maui County Code, Title 19 - Zoning**:
+
+- **Residential Districts (e.g., R-1, R-2, R-3):**  
+  Max height typically **25 feet to 30 feet** (2 to 3 ...
+2025-04-18 15:57:15,807 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui
+
+In Maui County, the maximum building height depends on the zoning district. The primary regulations come from the **Maui County Code, Title 19 - Zoning**:
+
+- **Residential Districts (e.g., R-1, R-2, R-3):**  
+  Max height typically **25 feet to 30 feet** (2 to 3 stories).  
+  Reference: Maui County Code §19.08.030 (Use and Development Standards for Residential Districts).
+
+- **Agricultural Districts:**  
+  Max height is generally **35 feet**.  
+  Reference: Maui County Code §19.10.030.
+
+- **Business/Commercial Districts:**  
+  Heights can vary, often **up to 50 feet** or more depending on the specific zone and neighborhood plans.  
+  Reference: Maui County Code §19.12.
+
+- **Special Districts (e.g., Resort, Industrial):**  
+  Heights are regulated case-by-case, but often range from **35 to 50 feet or more**, with some exceptions for resorts or planned developments.
+
+---
+
+### Additional Notes:
+- Height restrictions may be further limited by **overlay districts** (e.g., historic, shoreline setback) or **community plans**.
+- **Building Code (IBC)** does not limit height by itself but regulates structural safety.
+- Always check **specific zoning maps** and **community plan documents** for your parcel.
+
+---
+
+If you give me your parcel zoning or project type, I can give more exact limits for your case.
+
+You like me explain how to find zoning info online?
+2025-04-18 15:57:33,217 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 15:57:33,217 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 15:57:33,217 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 15:57:33,217 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 15:57:33,217 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.8
+2025-04-18 15:57:33,217 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 15:57:34,025 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 15:57:34,029 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 15:57:34,110 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf",
+      "score": 0.010588441,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Ord. 5455.pdf",
+      "score": -0.000847443182,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Commercial.COM Sample Energy Code Certification Block.pdf",
+      "score": -0.011970046,
+      "values": []
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 15:57:34,110 - server.app - DEBUG - [find_similar_texts] Excluding match with score=0.01 (below threshold)
+2025-04-18 15:57:34,110 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.00 (below threshold)
+2025-04-18 15:57:34,110 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.01 (below threshold)
+2025-04-18 15:57:34,111 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 0
+2025-04-18 15:57:34,111 - server.app - DEBUG - [handle_conversation] references: []
+2025-04-18 15:57:34,111 - server.app - DEBUG - [build_reference_block] Building reference block for 0 references
+2025-04-18 15:57:34,111 - server.app - DEBUG - [build_reference_block] No references found above threshold.
+2025-04-18 15:57:34,111 - server.app - DEBUG - [handle_conversation] references_block: No high-confidence references found.
+2025-04-18 15:57:34,112 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 15:57:34,112 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 15:57:34,112 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 15:57:34,112 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+No high-confidence references found....
+2025-04-18 15:57:34,112 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 15:57:34,112 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 15:57:34,112 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 15:57:34,112 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 15:57:34,113 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\nNo high-confidence references found.'}
+2025-04-18 15:57:34,113 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 15:57:34,127 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 15:57:38,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 15:57:38,533 - server.app - INFO - {"event": "aoi_request", "latency": 4.406, "model": "gpt-4.1-mini"}
+2025-04-18 15:57:38,534 - server.app - INFO - [generate_response] Usage - input tokens: 133, output tokens: 353
+2025-04-18 15:57:38,534 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui
+
+In Maui County, the maximum building height depends on the zoning district and the type of structure. The main reference is the **Maui County Code (MCC), Chapter 19.30 - Zoning,** specifically the zoning district regulations.
+
+#### General Height Limits by Zoning...
+2025-04-18 15:57:38,534 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui
+
+In Maui County, the maximum building height depends on the zoning district and the type of structure. The main reference is the **Maui County Code (MCC), Chapter 19.30 - Zoning,** specifically the zoning district regulations.
+
+#### General Height Limits by Zoning (MCC §19.30)
+
+- **Agriculture (AG-1, AG-2)**: Usually max 35 feet
+- **Residential Districts (R-1, R-2, R-3, R-4, R-5)**: Typically max 30 to 35 feet
+- **Business and Resort Districts (B-1, B-2, R-3.5, etc.)**: Can range 35 to 50 feet, sometimes higher
+- **Industrial Districts (I-1, I-2)**: Often up to 50 feet or more
+- **Special Districts** (e.g., airport, historic): Height may be limited by additional rules
+
+#### Important Notes
+- **Height Measurement:** MCC §19.04.030 defines height as the vertical distance from grade to the highest point of the structure.
+- **Overlay Districts and Special Cases:** Some areas like the Maui County Special Management Area (SMA) or Historic Districts may have stricter height limits.
+- **State and Federal Regulations:** For areas near airports, FAA regulations may limit height further.
+
+#### Example for Residential Zones (R-1)
+- Max height usually **30 feet** as per MCC §19.30.040.
+
+---
+
+If you tell me your zoning district or project type, I can give you exact height limits.
+
+Need help finding your zoning or more details?
+2025-04-18 16:06:22,509 - __main__ - INFO - Starting server on 0.0.0.0:8000 with environment=None
+2025-04-18 16:32:42,385 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 16:32:42,386 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:32:42,386 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:32:42,386 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 16:32:42,386 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.5
+2025-04-18 16:32:42,386 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 16:32:43,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 16:32:43,340 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 16:32:44,009 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf",
+      "score": 0.0110187838,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Ord. 5455.pdf",
+      "score": -0.00034039098,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Commercial.COM Sample Energy Code Certification Block.pdf",
+      "score": -0.0117954696,
+      "values": []
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 16:32:44,010 - server.app - DEBUG - [find_similar_texts] Excluding match with score=0.01 (below threshold)
+2025-04-18 16:32:44,010 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.00 (below threshold)
+2025-04-18 16:32:44,010 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.01 (below threshold)
+2025-04-18 16:32:44,010 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 0
+2025-04-18 16:32:44,010 - server.app - DEBUG - [handle_conversation] references: []
+2025-04-18 16:32:44,010 - server.app - DEBUG - [build_reference_block] Building reference block for 0 references
+2025-04-18 16:32:44,010 - server.app - DEBUG - [build_reference_block] No references found above threshold.
+2025-04-18 16:32:44,011 - server.app - DEBUG - [handle_conversation] references_block: No high-confidence references found.
+2025-04-18 16:32:44,011 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 16:32:44,011 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 16:32:44,011 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 16:32:44,011 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+No high-confidence references found....
+2025-04-18 16:32:44,011 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 16:32:44,011 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 16:32:44,012 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 16:32:44,012 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 16:32:44,012 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\nNo high-confidence references found.'}
+2025-04-18 16:32:44,012 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 16:32:44,024 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 16:32:48,815 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 16:32:48,832 - server.app - INFO - {"event": "aoi_request", "latency": 4.808, "model": "gpt-4.1-mini"}
+2025-04-18 16:32:48,832 - server.app - INFO - [generate_response] Usage - input tokens: 133, output tokens: 365
+2025-04-18 16:32:48,832 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui County
+
+The maximum building height in Maui depends on the zoning district and the specific area. Here’s a general guide based on **Maui County Code (MCC) Chapter 19.08 – Zoning**:
+
+- **Residential Districts (e.g., R-1, R-2)**:
+  - Typically **30 feet** maximum bu...
+2025-04-18 16:32:48,832 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui County
+
+The maximum building height in Maui depends on the zoning district and the specific area. Here’s a general guide based on **Maui County Code (MCC) Chapter 19.08 – Zoning**:
+
+- **Residential Districts (e.g., R-1, R-2)**:
+  - Typically **30 feet** maximum building height.
+  - Exceptions or special permits may allow taller structures (e.g., 35 feet in some R-3 zones).
+
+- **Agricultural Districts**:
+  - Height limits usually around **35 feet**.
+  
+- **Commercial and Industrial Districts**:
+  - Heights can be up to **40 feet or more**, depending on the zone.
+  - Some areas allow taller buildings with conditional use permits.
+
+- **Special Districts** (e.g., Historic Districts, Community Plan Areas):
+  - Height limits may be more restrictive to preserve character.
+
+### Specific Maui County Code Sections:
+- **MCC §19.08.030** — Defines zoning districts and general height limits.
+- **MCC §19.08.040** — Lists permitted uses and building standards including height.
+- **MCC Chapter 19.15** — Community plan designations that may modify height limits.
+
+### Additional Notes:
+- Height is measured from **natural grade to the highest point of the roof**.
+- Some areas have **overlay zones** or **special management area (SMA)** rules that may affect height.
+- For **residential rooftop structures** (e.g., solar panels, lanais), see MCC §19.08.040(B)(2).
+
+---
+
+If you have a specific parcel or zoning district in mind, I can look up exact height limits for that location. Need help with that?
+2025-04-18 16:33:21,239 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 16:33:21,239 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:33:21,240 - server.app - DEBUG -   [1] Role: assistant, Content: '### Maximum Building Height in Maui County\n\nThe maximum building height in Maui depends on the zoning district and the specific area. Here’s a general guide based on **Maui County Code (MCC) Chapter 19.08 – Zoning**:\n\n- **Residential Districts (e.g., R-1, R-2)**:\n  - Typically **30 feet** maximum building height.\n  - Exceptions or special permits may allow taller structures (e.g., 35 feet in some R-3 zones).\n\n- **Agricultural Districts**:\n  - Height limits usually around **35 feet**.\n  \n- **Commercial and Industrial Districts**:\n  - Heights can be up to **40 feet or more**, depending on the zone.\n  - Some areas allow taller buildings with conditional use permits.\n\n- **Special Districts** (e.g., Historic Districts, Community Plan Areas):\n  - Height limits may be more restrictive to preserve character.\n\n### Specific Maui County Code Sections:\n- **MCC §19.08.030** — Defines zoning districts and general height limits.\n- **MCC §19.08.040** — Lists permitted uses and building standards including height.\n- **MCC Chapter 19.15** — Community plan designations that may modify height limits.\n\n### Additional Notes:\n- Height is measured from **natural grade to the highest point of the roof**.\n- Some areas have **overlay zones** or **special management area (SMA)** rules that may affect height.\n- For **residential rooftop structures** (e.g., solar panels, lanais), see MCC §19.08.040(B)(2).\n\n---\n\nIf you have a specific parcel or zoning district in mind, I can look up exact height limits for that location. Need help with that?'
+2025-04-18 16:33:21,240 - server.app - DEBUG -   [2] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:33:21,240 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:33:21,240 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 16:33:21,240 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.5
+2025-04-18 16:33:21,241 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 16:33:21,991 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 16:33:21,995 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 16:33:22,071 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf",
+      "score": 0.0110187838,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Ord. 5455.pdf",
+      "score": -0.00034039098,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Commercial.COM Sample Energy Code Certification Block.pdf",
+      "score": -0.0117954696,
+      "values": []
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 16:33:22,071 - server.app - DEBUG - [find_similar_texts] Excluding match with score=0.01 (below threshold)
+2025-04-18 16:33:22,071 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.00 (below threshold)
+2025-04-18 16:33:22,071 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.01 (below threshold)
+2025-04-18 16:33:22,071 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 0
+2025-04-18 16:33:22,071 - server.app - DEBUG - [handle_conversation] references: []
+2025-04-18 16:33:22,071 - server.app - DEBUG - [build_reference_block] Building reference block for 0 references
+2025-04-18 16:33:22,071 - server.app - DEBUG - [build_reference_block] No references found above threshold.
+2025-04-18 16:33:22,071 - server.app - DEBUG - [handle_conversation] references_block: No high-confidence references found.
+2025-04-18 16:33:22,071 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 16:33:22,071 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 16:33:22,071 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 16:33:22,071 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+No high-confidence references found....
+2025-04-18 16:33:22,071 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 16:33:22,071 - server.app - DEBUG -   Role: assistant, Content (truncated): ### Maximum Building Height in Maui County
+
+The maximum building height in Maui ...
+2025-04-18 16:33:22,072 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 16:33:22,072 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\nNo high-confidence references found.'}
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [4] {'role': 'assistant', 'content': '### Maximum Building Height in Maui County\n\nThe maximum building height in Maui depends on the zoning district and the specific area. Here’s a general guide based on **Maui County Code (MCC) Chapter 19.08 – Zoning**:\n\n- **Residential Districts (e.g., R-1, R-2)**:\n  - Typically **30 feet** maximum building height.\n  - Exceptions or special permits may allow taller structures (e.g., 35 feet in some R-3 zones).\n\n- **Agricultural Districts**:\n  - Height limits usually around **35 feet**.\n  \n- **Commercial and Industrial Districts**:\n  - Heights can be up to **40 feet or more**, depending on the zone.\n  - Some areas allow taller buildings with conditional use permits.\n\n- **Special Districts** (e.g., Historic Districts, Community Plan Areas):\n  - Height limits may be more restrictive to preserve character.\n\n### Specific Maui County Code Sections:\n- **MCC §19.08.030** — Defines zoning districts and general height limits.\n- **MCC §19.08.040** — Lists permitted uses and building standards including height.\n- **MCC Chapter 19.15** — Community plan designations that may modify height limits.\n\n### Additional Notes:\n- Height is measured from **natural grade to the highest point of the roof**.\n- Some areas have **overlay zones** or **special management area (SMA)** rules that may affect height.\n- For **residential rooftop structures** (e.g., solar panels, lanais), see MCC §19.08.040(B)(2).\n\n---\n\nIf you have a specific parcel or zoning district in mind, I can look up exact height limits for that location. Need help with that?'}
+2025-04-18 16:33:22,072 - server.app - DEBUG -   [5] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 16:33:22,083 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 16:33:25,270 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 16:33:25,276 - server.app - INFO - {"event": "aoi_request", "latency": 3.194, "model": "gpt-4.1-mini"}
+2025-04-18 16:33:25,277 - server.app - INFO - [generate_response] Usage - input tokens: 516, output tokens: 250
+2025-04-18 16:33:25,277 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui County
+
+In Maui County, the **maximum building height** varies by zoning district according to **Maui County Code (MCC) Title 19 – Zoning**:
+
+- **Residential Districts (R-1, R-2):**  
+  Typically **30 feet** maximum height.  
+  - See MCC §19.08.030(A)(1)
+
+- **Agri...
+2025-04-18 16:33:25,277 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui County
+
+In Maui County, the **maximum building height** varies by zoning district according to **Maui County Code (MCC) Title 19 – Zoning**:
+
+- **Residential Districts (R-1, R-2):**  
+  Typically **30 feet** maximum height.  
+  - See MCC §19.08.030(A)(1)
+
+- **Agricultural Districts:**  
+  Usually **35 feet** maximum height.  
+  - See MCC §19.08.030(A)(2)
+
+- **Commercial and Industrial Districts:**  
+  Generally allow up to **40 feet** or higher, depending on the specific zone.  
+  - See MCC §19.08.030(A)(3)
+
+- **Special or Overlay Districts:**  
+  Height limits may be lower or require special permits to preserve community character or environmental concerns.
+
+### How height is measured:  
+From existing **natural grade to the highest point** of the building (roof or parapet).  
+- MCC §19.08.030(B)
+
+---
+
+If you need the exact height limit for a specific zoning district or parcel, I can look that up for you. You like me check one?
+2025-04-18 16:38:59,997 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 16:39:59,340 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 16:39:59,341 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:39:59,342 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 16:39:59,342 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 16:39:59,342 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.3
+2025-04-18 16:39:59,342 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 16:40:00,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 16:40:00,502 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 16:40:01,029 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf",
+      "score": 0.0110187838,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Ord. 5455.pdf",
+      "score": -0.00034039098,
+      "values": []
+    },
+    {
+      "id": "2018 IECC Commercial.COM Sample Energy Code Certification Block.pdf",
+      "score": -0.0117954696,
+      "values": []
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 16:40:01,030 - server.app - DEBUG - [find_similar_texts] Excluding match with score=0.01 (below threshold)
+2025-04-18 16:40:01,030 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.00 (below threshold)
+2025-04-18 16:40:01,030 - server.app - DEBUG - [find_similar_texts] Excluding match with score=-0.01 (below threshold)
+2025-04-18 16:40:01,030 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 0
+2025-04-18 16:40:01,031 - server.app - DEBUG - [handle_conversation] references: []
+2025-04-18 16:40:01,031 - server.app - DEBUG - [build_reference_block] Building reference block for 0 references
+2025-04-18 16:40:01,032 - server.app - DEBUG - [build_reference_block] No references found above threshold.
+2025-04-18 16:40:01,032 - server.app - DEBUG - [handle_conversation] references_block: No high-confidence references found.
+2025-04-18 16:40:01,032 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 16:40:01,032 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 16:40:01,032 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 16:40:01,032 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+No high-confidence references found....
+2025-04-18 16:40:01,032 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 16:40:01,032 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 16:40:01,032 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 16:40:01,032 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 16:40:01,032 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\nNo high-confidence references found.'}
+2025-04-18 16:40:01,032 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 16:40:01,045 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 16:40:06,428 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 16:40:06,441 - server.app - INFO - {"event": "aoi_request", "latency": 5.396, "model": "gpt-4.1-mini"}
+2025-04-18 16:40:06,441 - server.app - INFO - [generate_response] Usage - input tokens: 133, output tokens: 377
+2025-04-18 16:40:06,441 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui County
+
+In Maui County, maximum building height depends on zoning and specific district regulations, but general guidelines come from:
+
+- **Maui County Code (MCC) Chapter 19.04 – Zoning**
+- **Maui County Code Chapter 16.04 – Building Code**
+
+#### General Height Li...
+2025-04-18 16:40:06,442 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui County
+
+In Maui County, maximum building height depends on zoning and specific district regulations, but general guidelines come from:
+
+- **Maui County Code (MCC) Chapter 19.04 – Zoning**
+- **Maui County Code Chapter 16.04 – Building Code**
+
+#### General Height Limits
+
+- **Residential Districts (R-1, R-2, etc.)**: Usually **30 feet** maximum height.
+- **Agricultural Districts (AG-1, AG-2)**: Typically **35 feet** maximum height.
+- **Commercial and Industrial Districts**: Can vary, often **up to 45 feet** or more depending on zoning.
+
+#### Specifics from MCC 19.04 (Zoning)
+
+- Section **19.04.030** outlines allowable building heights by zoning district.
+- Height limits can be modified by:
+  - Special permits
+  - Planned Development (PD) zoning
+  - Overlay districts (Historic, Shoreline, etc.)
+
+#### Important Notes
+
+- **Height measured from finished grade to the highest point of the building.**
+- Some districts have height restrictions to protect views and cultural sites.
+- For **Shoreline Areas**, height limits may be stricter per Chapter 12.12 MCC (Shoreline Setback Rules).
+
+---
+
+### Summary Table Example
+
+| Zoning District | Max Building Height |
+|-----------------|--------------------|
+| R-1 (Residential) | 30 ft              |
+| AG-1 (Agricultural) | 35 ft             |
+| B-1 (Neighborhood Business) | 45 ft       |
+
+---
+
+If building in special districts or near shoreline, check with **Maui Planning Department** or specific zoning rules.
+
+---
+
+Need help finding exact height for your zoning district or project? I can look it up for you!
+2025-04-18 17:04:10,050 - __main__ - INFO - Starting server on 127.0.0.1:8000 with environment=None
+2025-04-18 17:05:23,851 - server.app - DEBUG - [handle_conversation] Received request with messages:
+2025-04-18 17:05:23,852 - server.app - DEBUG -   [0] Role: user, Content: 'What is the maximum height for a building in Maui?'
+2025-04-18 17:05:23,852 - server.app - DEBUG - [handle_conversation] Latest user message: 'What is the maximum height for a building in Maui?'
+2025-04-18 17:05:23,852 - server.app - DEBUG - [find_similar_texts] Query: What is the maximum height for a building in Maui?
+2025-04-18 17:05:23,852 - server.app - DEBUG - [find_similar_texts] top_k: 3, MIN_SCORE_THRESHOLD: 0.3
+2025-04-18 17:05:23,852 - server.app - DEBUG - [get_embedding] Received text for embedding: What is the maximum height for a building in Maui?...
+2025-04-18 17:05:24,575 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-18 17:05:24,630 - server.app - DEBUG - [get_embedding] Embedding length: 1536
+2025-04-18 17:05:24,980 - server.app - DEBUG - [find_similar_texts] Pinecone raw response (dict): {
+  "matches": [
+    {
+      "id": "2018 IBC.Ord 5508.pdf_p38_c0",
+      "score": 0.846386135,
+      "values": [],
+      "metadata": {
+        "chunk_index": 0.0,
+        "filename": "2018 IBC.Ord 5508.pdf",
+        "page_number": 38.0,
+        "text": "16.26C.1609.3 Table 1609\u00ab3.3(a](21 added. Subsection 1609.3 of the International Building Code is amended by adding table 1609.3.3(a)(2) as shown: Table 1609.3.3<aU21 Kd Values for Main Wind Force Resisting Systems Sited in Maui County a,b Topographic Main Wind Force Main Wind Force Biaxially Location in the Resisting Resisting Systems Symmetric County of Maui Systems with totally and independent systems Axisymmet in each orthogonal ric direction Structures Mean Roof Mean Mean Mean ofany Height less Roof Roof Roof Height and than or Height Height Height Arched equal to greater less than greater Roof 100 ft. than or equal than Structures 100 ft. to 100 ft. 100 ft. Sites on the Island of Maui at 0.6 0.6 0.70 0.75 0.85 an elevation not 0 5 greater than 1000 ft. Sites on the Island of Maui 0.6 .70 0.75 0.80 0.90 at an elevation 5 greater than 1000 ft. All other sites on the Islands of 0.8 0.8 0.80 0.85 0.95 Molokai and 0 5 Lanai The values of Kd for other non-building structures indicatedin ASCE-7 Table a. 26.6-1 shall be permitted. b. Site-specific probabilistic analysis of Kd based on wind-tunnel testing of topography and peak gust velocity profile shall be permitted to be submittedfor approvalby the BuildingOfficial, but Kd shall have a value not less than 0.60. 38"
+      }
+    },
+    {
+      "id": "2018 IBC.Ord 5508.pdf_p41_c0",
+      "score": 0.838220716,
+      "values": [],
+      "metadata": {
+        "chunk_index": 0.0,
+        "filename": "2018 IBC.Ord 5508.pdf",
+        "page_number": 41.0,
+        "text": "Exposure Category Zones forthe Islands of Molokaiand Lanai for buildings with mean roof height less than 130 feet Kaluakoi KaUupai 1 C V Kuttbpuu J- BflS LandUse Msunaloa C Agncullutc Conservation Kaunakakai C Rural Usiapue Urban Major toads EiposuroDOBoundary 0 2S 5 10Milos N ExposureB'CBoundary I j. X J A Notes V 4 1 Intermediate exposures, bebween calegonesBand Candbetween Cand D arepermned whensubstantiated potASCE 7recognifedmethodology 2 Silos locatedwrthintheC (coastal) zoneshallbepeimrtledtobeevaluatedlorexposurecategoryB (orthewind dtiecsortswhereanadjacent Bzone exrstsin theapptrcabte upwindsector \\ cC \\' r 3 Sites locatedwithin600leelhornthecoastkne shslbeexposurecategoryDforonshorewinddirectionsV Lan\u00bbCity ' 4 For buildingswhose heightisequalto orgreaterthan 130II. exposurecategoryshallbedelermnod --as,! pet Section 16094 5 For buildingswhose meanroofheight islessthanor equalto30n exposure category shallbepermned tobeevaluated perSection 16094 V t' .Uncle 8ay Figure 1609.4 (cl Exposure Category Zones for Islands of Molokai and Lanai, Maui County 41"
+      }
+    },
+    {
+      "id": "MCC16.25 Building Code Admin.Ord. 5507.pdf_p36_c0",
+      "score": 0.827968776,
+      "values": [],
+      "metadata": {
+        "chunk_index": 0.0,
+        "filename": "MCC16.25 Building Code Admin.Ord. 5507.pdf",
+        "page_number": 36.0,
+        "text": "test. All cord used on the hale shall be shades of green, tan, brown or black. 402.5 Metal prohibited. Metal shall not be used for the construction of the hale. SECTION 403 SIZE AND LOCATION 16.25.403 Size and location. 403.1 Height and size limitation. Hale shall be one-story, detached structure(s) not exceeding 1,800 square feet. Hale shall not exceed the size indicated in Table 403.1. Table 403.1 - Maximum Size of Hale (feet) Hale HalSwai Hale Ku\u2018ai Hale Noa Hale Wa'a 30X60 14X20 14X24 30X60 403.2 Zoning requirements. Hale shall comply with minimum yard requirements in the zoning codes. 403.3 Minimum separation. The minimum separation between a hale and another structure shall be at least 10 feet for a one-story structure; 15 feet for a two-story structure; or a distance equal to the height of the hale, whichever is more. The minimum separation between two hale shall be at least 10 feet or a distance equal to the height of the taller hale. 403.4 Hale Noa. Hale [noa] Noa structures may only be constructed on property where a separate residence exists on the property. SECTION 404 ALLOWABLE AND PROHIBITED USES 16.25.404 Allowable and prohibited uses. 404.1 Allowable uses. To the extent permitted by other applicable law, allowable uses for hale structures shall be in accordance with Table 404.1. 36"
+      }
+    }
+  ],
+  "namespace": "",
+  "usage": {
+    "read_units": 6
+  }
+}
+2025-04-18 17:05:24,981 - server.app - DEBUG - [find_similar_texts] Number of filtered matches: 3
+2025-04-18 17:05:24,982 - server.app - DEBUG - [handle_conversation] references: [{'id': '2018 IBC.Ord 5508.pdf_p38_c0', 'score': 0.846386135, 'metadata': {'chunk_index': 0.0, 'filename': '2018 IBC.Ord 5508.pdf', 'page_number': 38.0, 'text': '16.26C.1609.3 Table 1609«3.3(a](21 added. Subsection 1609.3 of the International Building Code is amended by adding table 1609.3.3(a)(2) as shown: Table 1609.3.3<aU21 Kd Values for Main Wind Force Resisting Systems Sited in Maui County a,b Topographic Main Wind Force Main Wind Force Biaxially Location in the Resisting Resisting Systems Symmetric County of Maui Systems with totally and independent systems Axisymmet in each orthogonal ric direction Structures Mean Roof Mean Mean Mean ofany Height less Roof Roof Roof Height and than or Height Height Height Arched equal to greater less than greater Roof 100 ft. than or equal than Structures 100 ft. to 100 ft. 100 ft. Sites on the Island of Maui at 0.6 0.6 0.70 0.75 0.85 an elevation not 0 5 greater than 1000 ft. Sites on the Island of Maui 0.6 .70 0.75 0.80 0.90 at an elevation 5 greater than 1000 ft. All other sites on the Islands of 0.8 0.8 0.80 0.85 0.95 Molokai and 0 5 Lanai The values of Kd for other non-building structures indicatedin ASCE-7 Table a. 26.6-1 shall be permitted. b. Site-specific probabilistic analysis of Kd based on wind-tunnel testing of topography and peak gust velocity profile shall be permitted to be submittedfor approvalby the BuildingOfficial, but Kd shall have a value not less than 0.60. 38'}}, {'id': '2018 IBC.Ord 5508.pdf_p41_c0', 'score': 0.838220716, 'metadata': {'chunk_index': 0.0, 'filename': '2018 IBC.Ord 5508.pdf', 'page_number': 41.0, 'text': "Exposure Category Zones forthe Islands of Molokaiand Lanai for buildings with mean roof height less than 130 feet Kaluakoi KaUupai 1 C V Kuttbpuu J- BflS LandUse Msunaloa C Agncullutc Conservation Kaunakakai C Rural Usiapue Urban Major toads EiposuroDOBoundary 0 2S 5 10Milos N ExposureB'CBoundary I j. X J A Notes V 4 1 Intermediate exposures, bebween calegonesBand Candbetween Cand D arepermned whensubstantiated potASCE 7recognifedmethodology 2 Silos locatedwrthintheC (coastal) zoneshallbepeimrtledtobeevaluatedlorexposurecategoryB (orthewind dtiecsortswhereanadjacent Bzone exrstsin theapptrcabte upwindsector \\ cC \\' r 3 Sites locatedwithin600leelhornthecoastkne shslbeexposurecategoryDforonshorewinddirectionsV Lan»City ' 4 For buildingswhose heightisequalto orgreaterthan 130II. exposurecategoryshallbedelermnod --as,! pet Section 16094 5 For buildingswhose meanroofheight islessthanor equalto30n exposure category shallbepermned tobeevaluated perSection 16094 V t' .Uncle 8ay Figure 1609.4 (cl Exposure Category Zones for Islands of Molokai and Lanai, Maui County 41"}}, {'id': 'MCC16.25 Building Code Admin.Ord. 5507.pdf_p36_c0', 'score': 0.827968776, 'metadata': {'chunk_index': 0.0, 'filename': 'MCC16.25 Building Code Admin.Ord. 5507.pdf', 'page_number': 36.0, 'text': "test. All cord used on the hale shall be shades of green, tan, brown or black. 402.5 Metal prohibited. Metal shall not be used for the construction of the hale. SECTION 403 SIZE AND LOCATION 16.25.403 Size and location. 403.1 Height and size limitation. Hale shall be one-story, detached structure(s) not exceeding 1,800 square feet. Hale shall not exceed the size indicated in Table 403.1. Table 403.1 - Maximum Size of Hale (feet) Hale HalSwai Hale Ku‘ai Hale Noa Hale Wa'a 30X60 14X20 14X24 30X60 403.2 Zoning requirements. Hale shall comply with minimum yard requirements in the zoning codes. 403.3 Minimum separation. The minimum separation between a hale and another structure shall be at least 10 feet for a one-story structure; 15 feet for a two-story structure; or a distance equal to the height of the hale, whichever is more. The minimum separation between two hale shall be at least 10 feet or a distance equal to the height of the taller hale. 403.4 Hale Noa. Hale [noa] Noa structures may only be constructed on property where a separate residence exists on the property. SECTION 404 ALLOWABLE AND PROHIBITED USES 16.25.404 Allowable and prohibited uses. 404.1 Allowable uses. To the extent permitted by other applicable law, allowable uses for hale structures shall be in accordance with Table 404.1. 36"}}]
+2025-04-18 17:05:24,982 - server.app - DEBUG - [build_reference_block] Building reference block for 3 references
+2025-04-18 17:05:24,983 - server.app - DEBUG - [build_reference_block] Final reference block:
+[1] "16.26C.1609.3 Table 1609«3.3(a](21 added. Subsection 1609.3 of the International Building Code is amended by adding table 1609.3.3(a)(2) as shown: Table 1609.3.3<aU21 Kd Values for Main Wind Force Resisting Systems Sited in Maui County a,b Topographic Main Wind Force Main Wind Force Biaxially Locati..." (score=0.85) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)
+[2] "Exposure Category Zones forthe Islands of Molokaiand Lanai for buildings with mean roof height less than 130 feet Kaluakoi KaUupai 1 C V Kuttbpuu J- BflS LandUse Msunaloa C Agncullutc Conservation Kaunakakai C Rural Usiapue Urban Major toads EiposuroDOBoundary 0 2S 5 10Milos N ExposureB'CBoundary I ..." (score=0.84) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)
+[3] "test. All cord used on the hale shall be shades of green, tan, brown or black. 402.5 Metal prohibited. Metal shall not be used for the construction of the hale. SECTION 403 SIZE AND LOCATION 16.25.403 Size and location. 403.1 Height and size limitation. Hale shall be one-story, detached structure(s)..." (score=0.83) (https://github.com/username/repo/blob/main/MCC16.25 Building Code Admin.Ord. 5507.pdf)
+2025-04-18 17:05:24,983 - server.app - DEBUG - [handle_conversation] references_block: [1] "16.26C.1609.3 Table 1609«3.3(a](21 added. Subsection 1609.3 of the International Building Code is amended by adding table 1609.3.3(a)(2) as shown: Table 1609.3.3<aU21 Kd Values for Main Wind Force Resisting Systems Sited in Maui County a,b Topographic Main Wind Force Main Wind Force Biaxially Locati..." (score=0.85) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)
+[2] "Exposure Category Zones forthe Islands of Molokaiand Lanai for buildings with mean roof height less than 130 feet Kaluakoi KaUupai 1 C V Kuttbpuu J- BflS LandUse Msunaloa C Agncullutc Conservation Kaunakakai C Rural Usiapue Urban Major toads EiposuroDOBoundary 0 2S 5 10Milos N ExposureB'CBoundary I ..." (score=0.84) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)
+[3] "test. All cord used on the hale shall be shades of green, tan, brown or black. 402.5 Metal prohibited. Metal shall not be used for the construction of the hale. SECTION 403 SIZE AND LOCATION 16.25.403 Size and location. 403.1 Height and size limitation. Hale shall be one-story, detached structure(s)..." (score=0.83) (https://github.com/username/repo/blob/main/MCC16.25 Building Code Admin.Ord. 5507.pdf)
+2025-04-18 17:05:24,983 - server.app - DEBUG - [handle_conversation] Final prompt sequence ready for generation.
+2025-04-18 17:05:24,983 - server.app - DEBUG - [generate_response] Invoked with messages:
+2025-04-18 17:05:24,984 - server.app - DEBUG -   Role: system, Content (truncated): You are an expert in Maui County building code, helping Maui tradespeople with b...
+2025-04-18 17:05:24,984 - server.app - DEBUG -   Role: assistant, Content (truncated): Relevant Maui code references:
+
+[1] "16.26C.1609.3 Table 1609«3.3(a](21 added. S...
+2025-04-18 17:05:24,984 - server.app - DEBUG -   Role: user, Content (truncated): What is the maximum height for a building in Maui?...
+2025-04-18 17:05:24,984 - server.app - DEBUG - [generate_response] Combined developer + user messages:
+2025-04-18 17:05:24,984 - server.app - DEBUG -   [0] {'role': 'developer', 'content': 'Be precise and concise, use Maui building code references.'}
+2025-04-18 17:05:24,984 - server.app - DEBUG -   [1] {'role': 'system', 'content': 'You are an expert in Maui County building code, helping Maui tradespeople with building code questions.\nAlways reference actual building code when possible, speak in light pidgin.\n\nUse these steps:\n1) Provide a thorough, nuanced answer as a local Maui expert.\n2) Minimize disclaimers or AI references.\n3) Format your response in markdown for readability.\n4) Ask if the user needs further clarification.\n'}
+2025-04-18 17:05:24,984 - server.app - DEBUG -   [2] {'role': 'assistant', 'content': 'Relevant Maui code references:\n\n[1] "16.26C.1609.3 Table 1609«3.3(a](21 added. Subsection 1609.3 of the International Building Code is amended by adding table 1609.3.3(a)(2) as shown: Table 1609.3.3<aU21 Kd Values for Main Wind Force Resisting Systems Sited in Maui County a,b Topographic Main Wind Force Main Wind Force Biaxially Locati..." (score=0.85) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)\n[2] "Exposure Category Zones forthe Islands of Molokaiand Lanai for buildings with mean roof height less than 130 feet Kaluakoi KaUupai 1 C V Kuttbpuu J- BflS LandUse Msunaloa C Agncullutc Conservation Kaunakakai C Rural Usiapue Urban Major toads EiposuroDOBoundary 0 2S 5 10Milos N ExposureB\'CBoundary I ..." (score=0.84) (https://github.com/username/repo/blob/main/2018 IBC.Ord 5508.pdf)\n[3] "test. All cord used on the hale shall be shades of green, tan, brown or black. 402.5 Metal prohibited. Metal shall not be used for the construction of the hale. SECTION 403 SIZE AND LOCATION 16.25.403 Size and location. 403.1 Height and size limitation. Hale shall be one-story, detached structure(s)..." (score=0.83) (https://github.com/username/repo/blob/main/MCC16.25 Building Code Admin.Ord. 5507.pdf)'}
+2025-04-18 17:05:24,985 - server.app - DEBUG -   [3] {'role': 'user', 'content': 'What is the maximum height for a building in Maui?'}
+2025-04-18 17:05:24,999 - server.app - DEBUG - [generate_response] Sending request to oai.responses.create()
+2025-04-18 17:05:33,995 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-18 17:05:34,010 - server.app - INFO - {"event": "aoi_request", "latency": 9.011, "model": "gpt-4.1-mini"}
+2025-04-18 17:05:34,010 - server.app - INFO - [generate_response] Usage - input tokens: 501, output tokens: 487
+2025-04-18 17:05:34,010 - server.app - DEBUG - [generate_response] Received response text (truncated): ### Maximum Building Height in Maui County
+
+In Maui County, the maximum building height depends on the zoning district and specific land use regulations. Here’s a breakdown based on Maui County Code and general building code references:
+
+---
+
+#### 1. **Maui County Zoning Code (Title 19 MCC)**
+- Most...
+2025-04-18 17:05:34,011 - server.app - DEBUG - [handle_conversation] Final answer from model: ### Maximum Building Height in Maui County
+
+In Maui County, the maximum building height depends on the zoning district and specific land use regulations. Here’s a breakdown based on Maui County Code and general building code references:
+
+---
+
+#### 1. **Maui County Zoning Code (Title 19 MCC)**
+- Most residential zones (e.g., R-1, R-2) have a **maximum height limit of 30 feet**.
+- Commercial and industrial zones may allow taller buildings, often up to **45 feet or more**, depending on the district.
+- Agricultural and rural zones typically restrict height to protect views and rural character, usually **20-30 feet**.
+
+#### 2. **Maui County Building Code (Chapter 16 MCC)**
+- Does not specify maximum height directly but enforces structural requirements based on height.
+- For buildings over certain heights, additional wind load and structural design per **IBC 2018** amendments (16.26C) are required.
+
+#### 3. **International Building Code (IBC) with Maui Amendments**
+- Maui adopts the 2018 IBC with local amendments (Ord. 5508).
+- Chapter 16 (Structural Design) references wind loads and exposure categories that become critical for taller structures.
+- Height limits often influence foundation, framing, and wind bracing requirements.
+
+---
+
+### Summary Table
+
+| Zone Type          | Typical Max Height (feet) | Reference                      |
+|--------------------|---------------------------|--------------------------------|
+| Residential Zones   | 30 feet                   | Maui County Zoning Title 19 MCC|
+| Commercial Zones    | 45 feet or higher         | Maui County Zoning Title 19 MCC|
+| Agricultural/Rural  | 20-30 feet                | Maui County Zoning Title 19 MCC|
+| Building Code       | No fixed max; based on design standards | MCC 16.26C (IBC 2018 amendments) |
+
+---
+
+### Example Maui Code Reference
+
+- **Maui County Code Title 19, Zoning**: See specific zoning district regulations for height limits.
+- **MCC 16.26C.1609.3**: Structural design for wind loads becomes more rigorous as building height increases.
+  
+---
+
+If you working on specific zoning or project, can help you check exact height limit based on parcel zoning or use. Need more info on height exceptions or structural code for tall buildings?

@@ -5,10 +5,6 @@ import sys
 import logging
 import dotenv
 
-print("DEBUG: __file__=", __file__)  # see which file Python thinks is __main__
-dotenv.load_dotenv()
-print("DEBUG: .env load => PINECONE_API_KEY =", os.getenv("PINECONE_API_KEY"))
-
 dotenv.load_dotenv()
 from server.configmanager import config
 from server.database_connect import get_db_session
@@ -74,7 +70,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Start the Maui Building Code Assistant server."
     )
-
+    parser.add_argument(
+        "--min_similarity_threshold",
+        type=float,
+        default=config.get("MIN_SCORE_THRESHOLD") or 0.5,
+        help="Minimum similarity threshold for document retrieval.",
+    )
     parser.add_argument(
         "--environment",
         type=str,
