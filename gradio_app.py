@@ -1,3 +1,4 @@
+import time
 import gradio as gr
 import requests
 
@@ -9,14 +10,14 @@ FEEDBACK_URL = "http://127.0.0.1:8000/feedback"  # Optional feedback endpoint
 
 
 def clear_history():
-    # Reset both the conversation state and the displayed chat
+    """Reset both the conversation state and the displayed chat."""
     return [], []
 
 
 def display_history(history):
     """
-    Convert a list of {role, content} messages into the [[user, assistant], ...] format
-    expected by gr.Chatbot.
+    Convert a list of {role, content} dicts into the [[user, assistant], ...]
+    format expected by gr.Chatbot.
     """
     pairs = []
     for i, msg in enumerate(history):
@@ -46,7 +47,23 @@ CUSTOM_CSS = """
 #chatbot_box {
   margin: 0 auto;
   max-width: 600px;
-  position: relative; /* so we can position children absolutely */
+  position: relative;
+  resize: both;   /* allow both horizontal and vertical resize */
+  overflow: auto;
+}
+
+/* Enlarge user and assistant avatars */
+#chatbot_box .chatbot-message-user .avatar img,
+#chatbot_box .chatbot-message-assistant .avatar img {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+/* Make example row match the same max-width as the chatbot */
+#example_row {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
 }
 
 /* Footer styling */
@@ -59,10 +76,16 @@ CUSTOM_CSS = """
 /* Input container styling */
 #input_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 12px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto 0;
+  align-items: stretch;
+}
+
+/* Make input box span full width */
+#user_input textarea {
+  width: 100% !important;
 }
 
 /* User text input */
@@ -76,28 +99,19 @@ CUSTOM_CSS = """
   outline: none;
 }
 
-/* Send button to the right of the textbox */
 #send_button {
-  border: 1px solid #ccc;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 1rem;
-  background-color: #ccc; /* default grey */
-  color: #333;
-  transition: background-color 0.2s, color 0.2s;
+  width: 80px !important;
+  height: 40px !important;
+  border-radius: 20px !important;
+  align-self: center !important;
+  background-color: #007aff !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+  font-size: 1rem !important;
 }
-
-/* Dynamic button color if user_input has text */
-#user_input:not(:placeholder-shown) + button#send_button {
-  background-color: #fff;
-  color: #0b3d78;
-  border-color: #0b3d78;
-}
-#user_input:not(:placeholder-shown) + button#send_button:hover {
-  background-color: #0b3d78;
-  color: #fff;
+#send_button:hover {
+  background-color: #005bb5 !important;
 }
 
 /* The floating feedback widget in the lower-left corner of the chatbot box */
@@ -130,6 +144,24 @@ CUSTOM_CSS = """
 #feedback_status {
   display: none;
 }
+
+/* Loading spinner for the input area */
+#input_spinner {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007aff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+/* Spin animation keyframes */
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 """
 
 
@@ -139,8 +171,7 @@ CUSTOM_CSS = """
 async def query_api(conversation):
     """
     Sends the entire conversation array to the FastAPI endpoint.
-    The server expects a JSON payload of the form:
-      { "messages": [ [user_msg, assistant_msg], [...], ... ] }
+    Expects a JSON payload: { "messages": [ {role, content}, ... ] }
     """
     try:
         response = requests.post(API_URL, json={"messages": conversation})
@@ -168,25 +199,43 @@ async def send_vote_feedback(vote_type, conversation_history):
 
 async def user_submit(user_message, history):
     """
-    Adds the user's message to the conversation history and clears the input.
-    Each entry in 'history' is [user_msg, assistant_msg].
-    For the new user message, assistant_msg is None (waiting for the bot).
+    If the user typed something valid, add it to conversation as role=user.
+    Return updated history, with the user_input box cleared.
     """
     if not user_message.strip():
-        return "", history
+        return "", history  # do nothing if whitespace only
     new_history = history + [{"role": "user", "content": user_message}]
     return "", new_history
 
 
 async def bot_reply(history):
     """
-    The last user message is at history[-1][0].
-    We pass the entire history to the server for context.
-    The server returns an answer, which we append as the assistant's response.
+    Calls the server to get the assistant's response, appends it to conversation.
     """
+    import time
+
+    time.sleep(2)
+    if not history or history[-1]["role"] != "user":
+        return history  # no new user message
     bot_response = await query_api(history)
-    # Append assistant reply
     return history + [{"role": "assistant", "content": bot_response}]
+
+
+def delayed_hide_spinner(_):
+    """
+    Final function in the chain that returns JS to hide the spinner
+    AFTER a short delay. This solves timing issues with immediate partial replies.
+    """
+    # Wait half a second to make sure the assistant message is fully rendered
+    # before hiding spinner
+    return """<script>
+          console.log("delayed_hide_spinner() called - about to wait 500 ms");
+          setTimeout(() => {
+
+            document.getElementById('input_spinner').style.display = 'none';
+        }, 500);
+          console.log("500 ms up...");
+    </script>"""
 
 
 # ------------------------------------------------------------------
@@ -196,110 +245,178 @@ with gr.Blocks(title="Maui Building Code Assistant", css=CUSTOM_CSS) as demo:
     # Header
     gr.Markdown("# Maui Building Code Assistant", elem_id="top_banner")
 
-    # Store conversation state
+    # Conversation state
     conversation_history = gr.State([])
 
-    # Main chatbot display
+    # Main chatbot
     chatbot = gr.Chatbot(
-        label="Conversation", elem_id="chatbot_box", height=400, type="messages"
+        label="Conversation",
+        elem_id="chatbot_box",
+        height=400,
+        type="messages",
+        feedback_options=["thumbs_up", "thumbs_down"],
+        show_copy_button=True,
+        show_share_button=True,
+        resizable=True,
+        allow_file_downloads=True,
+        avatar_images=(
+            "server/assets/user_avatar.png",
+            "server/assets/assistant_avatar.png",
+        ),
     )
 
-    # Row with user textbox + send button
+    # Input row: text + send button
     with gr.Row(elem_id="input_container"):
         user_input = gr.Textbox(
             show_label=False,
             placeholder="Ask your question here...",
             container=False,
             elem_id="user_input",
-            lines=2,  # allow multiple lines
+            lines=2,
         )
         submit_btn = gr.Button(
             "↑",
             variant="primary",
+            scale=1,
             elem_id="send_button",
         )
-        trash_btn = gr.Button("🗑️", elem_id="trash_button")
 
-    # Chain user input -> update state -> bot reply -> update chat display
-    submit_btn.click(
-        fn=user_submit,
-        inputs=[user_input, conversation_history],
-        outputs=[user_input, conversation_history],
-    ).then(
-        fn=bot_reply,
-        inputs=[conversation_history],
-        outputs=[conversation_history],
-    ).then(
-        fn=lambda history: history,
-        inputs=[conversation_history],
-        outputs=[chatbot],
+    # Spinner below
+    spinner_html = gr.HTML(
+        "<div id='input_spinner'></div>", elem_id="spinner_container", visible=True
     )
 
+    # Example prompts
+    with gr.Row(elem_id="example_row"):
+        examples = gr.Examples(
+            examples=[
+                "What is the maximum height for a building in Maui?",
+                "Can I build a fence without a permit?",
+                "What are the requirements for a swimming pool?",
+                "How do I apply for a building permit?",
+                "What is the process for getting a variance?",
+                "Are there any restrictions on building materials?",
+                "What is the setback requirement for a new home?",
+                "Can I build a deck without a permit?",
+                "What are the zoning regulations for my property?",
+                "How do I find a licensed contractor in Maui?",
+                "What is the process for getting a certificate of occupancy?",
+                "Are there any special requirements for building near the ocean?",
+                "What are the fire safety requirements for new construction?",
+                "Can I build a guest house on my property?",
+                "What are the requirements for installing solar panels?",
+            ],
+            inputs=[user_input],
+            label="Try one of these…",
+        )
+
+    # 1) On Send button click:
+    submit_chain = (
+        submit_btn.click(
+            fn=user_submit,
+            inputs=[user_input, conversation_history],
+            outputs=[user_input, conversation_history],
+        )
+        .then(
+            fn=lambda h: h,
+            inputs=[conversation_history],
+            outputs=[chatbot],
+        )
+        .then(
+            fn=bot_reply,
+            inputs=[conversation_history],
+            outputs=[conversation_history],
+            show_progress=True,
+        )
+        .then(
+            fn=lambda h: h,
+            inputs=[conversation_history],
+            outputs=[chatbot],
+        )
+        .then(
+            fn=delayed_hide_spinner,
+            inputs=[conversation_history],
+            outputs=[spinner_html],
+        )
+    )
+
+    # 2) On Enter in Textbox:
     user_input.submit(
         fn=user_submit,
         inputs=[user_input, conversation_history],
         outputs=[user_input, conversation_history],
     ).then(
+        fn=lambda h: h,
+        inputs=[conversation_history],
+        outputs=[chatbot],
+    ).then(
         fn=bot_reply,
         inputs=[conversation_history],
         outputs=[conversation_history],
+        show_progress=True,
     ).then(
-        fn=lambda history: history,
+        fn=lambda h: h,
         inputs=[conversation_history],
         outputs=[chatbot],
+    ).then(
+        fn=delayed_hide_spinner,
+        inputs=[conversation_history],
+        outputs=[spinner_html],
     )
-
-    trash_btn.click(
-        fn=clear_history,
-        inputs=[],  # no inputs
-        outputs=[conversation_history, chatbot],
-    )
-
-    # Example feedback widget (currently commented out)
-    # with gr.Group(elem_id="feedback_floating_left"):
-    #     thumbs_up = gr.Button("👍", elem_classes="feedback-btn")
-    #     thumbs_down = gr.Button("👎", elem_classes="feedback-btn")
-    #     feedback_status = gr.Textbox(
-    #         label="Feedback Status", interactive=False, elem_id="feedback_status"
-    #     )
-    #
-    #     thumbs_up.click(
-    #         fn=lambda hist: await send_vote_feedback("up", hist),
-    #         inputs=conversation_history,
-    #         outputs=feedback_status,
-    #     )
-    #     thumbs_down.click(
-    #         fn=lambda hist: await send_vote_feedback("down", hist),
-    #         inputs=conversation_history,
-    #         outputs=feedback_status,
-    #     )
 
     # Footer
     gr.Markdown(
         "#### Powered by Gradio + FastAPI + OpenAI + Pinecone", elem_id="footer_text"
     )
+
+    # JS snippet for enabling/disabling send button & showing spinner
     gr.HTML(
         """<script>
-        (function() {
-          const wrapper = document.getElementById("user_input");
-          const textarea = wrapper.querySelector("textarea");
-          const sendBtn = document.getElementById("send_button");
-          textarea.addEventListener("keydown", function(e) {
-            if (e.key === "Enter" && !e.metaKey) {
-              const start = this.selectionStart;
-              const end = this.selectionEnd;
-              this.value = this.value.slice(0, start) + "\\n" + this.value.slice(end);
-              this.selectionStart = this.selectionEnd = start + 1;
-              e.preventDefault();
-            } else if (e.key === "Enter" && e.metaKey) {
-              sendBtn.click();
-              e.preventDefault();
-            }
-          });
-        })();
-        </script>"""
+document.addEventListener("DOMContentLoaded", () => {
+  const sendBtn = document.getElementById("send_button");
+  // Initially disable the send button
+  sendBtn.disabled = true;
+
+  const spinner = document.getElementById("input_spinner");
+  const userInput = document.querySelector("#user_input textarea");
+
+  // Enable/disable send button based on non-empty input
+  function updateSendButton() {
+    sendBtn.disabled = (userInput.value.trim() === "");
+  }
+  userInput.addEventListener("input", updateSendButton);
+  updateSendButton();
+
+  // Show spinner if user typed something
+  function showSpinner() {
+    console.log("showSpinner() called");
+    spinner.style.display = 'block';
+  }
+
+  // Send button: show spinner if input isn't empty
+  sendBtn.addEventListener("click", () => {
+    if (userInput.value.trim() !== "") {
+      console.log("Send button clicked");
+      console.log("Calling showSpinner()");
+      showSpinner();
+    }
+  });
+
+  // Ctrl+Enter also triggers the chain
+  userInput.addEventListener("keydown", (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
+      if (userInput.value.trim() !== "") {
+        console.log("Ctrl+Enter pressed");
+        console.log("Calling showSpinner()");
+        showSpinner();
+      }
+    }
+  });
+});
+</script>"""
     )
 
 # Run Gradio
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7861, share=True)
+    # demo.launch(server_name="0.0.0.0", server_port=7861, share=True)
+    demo.launch(server_name="127.0.0.1", server_port=7861, share=False)
