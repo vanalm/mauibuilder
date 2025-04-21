@@ -1,0 +1,8 @@
+venv
+__pycache__
+logs
+tempCodeRunerFile.py
+.python-version 
+.gradio/certificate.pem 
+.DS_Store
+
