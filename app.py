@@ -1,17 +1,18 @@
 import asyncio
+import json
 import logging
 import time
-import json
 from typing import List, Union
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel
 from openai import AsyncOpenAI, RateLimitError
-from server.ratelimiter import get_ratelimiter
-from server.configmanager import config
 from pinecone import Pinecone
+from pydantic import BaseModel
+
+from server.configmanager import config
+from server.ratelimiter import get_ratelimiter
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)

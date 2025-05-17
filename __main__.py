@@ -1,15 +1,15 @@
 import argparse
-import uvicorn
+import logging
 import os
 import sys
-import logging
+
 import dotenv
+import uvicorn
 
 dotenv.load_dotenv()
+from server.app import app
 from server.configmanager import config
 from server.database_connect import get_db_session
-from server.app import app
-
 
 logger = logging.getLogger(__name__)
 
